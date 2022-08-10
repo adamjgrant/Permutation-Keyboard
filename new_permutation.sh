@@ -5,11 +5,11 @@ read permutation_topic
 echo Enter name of permutation
 read permutation_name 
 
-mkdir permutations/$permutation_topic/$permutation_name.js
+mkdir -p permutation_topics/$permutation_topic
 
-echo "permutations.${permutation_name} = {\n  \"main\": [\n  \n]\n};" > permutations/$permutation_topic/$permutation_name.js
+echo "permutations.${permutation_name} = {\n  \"main\": [\n  \n  ]\n};" > permutation_topics/$permutation_topic/$permutation_name.js
 
 # Add component to array.
-sed "s/<script>let permutations \= \{\};<\/script>/<script>let permutations \= \{\};<\/script>\n  <script src=\"\.\/permutations\/${permutation_topic}\/${permutation_name}.js\"><\/script>\n/" index.html | tee index.html > /dev/null
+sed "s/<\!\-\- Permutations \-\->/<\!\-\- Permutations \-\->\n    <script src=\"\.\/permutations\/${permutation_topic}\/${permutation_name}.js\"><\/script>\n/" index.html | tee index.html
 
 echo "${permutation_topic}/${permutation_name} created."
