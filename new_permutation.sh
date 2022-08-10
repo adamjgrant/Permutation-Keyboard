@@ -12,6 +12,6 @@ echo "permutations.${permutation_name} = {\n  \"main\": [\n  \n  ]\n};" > permut
 # Add component to array.
 markup=$(more index.html)
 echo "" > index.html;
-echo $markup | sed "s/<\!\-\- Permutations \-\->/<\!\-\- Permutations \-\->\n    <script src=\"\.\/permutations\/${permutation_topic}\/${permutation_name}.js\"><\/script>\n/" >> index.html
+echo $markup | sed "s/<\!\-\- Permutations \-\->/<\!\-\- Permutations \-\->\n    <script src=\"\.\/permutation_topics\/${permutation_topic}\/${permutation_name}.js\"><\/script>\n/" >> index.html
 
 echo "${permutation_topic}/${permutation_name} created."

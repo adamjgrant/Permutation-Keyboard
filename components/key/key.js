@@ -1,5 +1,6 @@
 import Component from "../../mozart.js";
 import Tree from "../../permute.js";
+import editor from "../editor/editor.js";
 
 let key = new Component("key");
 
@@ -7,7 +8,8 @@ key.assign({
     insert_permutation(e) {
         let permutation_name = this.get_permutation_name(e);
         let permutation_json = this.get_permutation_json(permutation_name);
-        console.log(permutation_json);
+        let permutation = new Tree(permutation_json).one;
+        editor.append_text(permutation);
     },
 
     get_permutation_name(e) {
