@@ -4,7 +4,7 @@ let editor = new Component("editor");
 
 editor.assign({
     append_text(text) {
-      this.me.innerHTML += text;
+      this.me.value += text;
     }
 })
 
