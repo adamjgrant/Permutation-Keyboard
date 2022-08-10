@@ -8,7 +8,7 @@ key.assign({
     insert_permutation(e) {
         let permutation_name = this.get_permutation_name(e);
         let permutation_json = this.get_permutation_json(permutation_name);
-        let permutation = new Tree(permutation_json).one;
+        let permutation = `${new Tree(permutation_json).one} `;
         editor.append_text(permutation);
     },
 
