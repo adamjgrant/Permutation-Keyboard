@@ -9,8 +9,27 @@
 </head>
 
 <body>
+    <select data-component="topic_switcher">
+        <option value="corporate_apology">Corporate Apology</option>
+        <option value="great_to_meet_you">Was Great to Meet You</option>
+    </select>
+
+    <textarea data-component="editor" placeholder="Type using the permutation buttons below."></textarea>
+
     <script type="module" src="mozart.js"></script>
 
     <!-- Components -->
+
+    <!-- key -->
+    <script type="module" src="./components/key/key.js"></script>
+    <link rel="stylesheet" href="./components/key/key.css" />
+
+    <!-- editor -->
+    <script type="module" src="./components/editor/editor.js"></script>
+    <link rel="stylesheet" href="./components/editor/editor.css" />
+
+    <!-- topic_switcher -->
+    <script type="module" src="./components/topic_switcher/topic_switcher.js"></script>
+    <link rel="stylesheet" href="./components/topic_switcher/topic_switcher.css" />
 </body>
 </html>
