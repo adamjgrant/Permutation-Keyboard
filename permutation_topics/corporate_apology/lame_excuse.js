@@ -6,10 +6,16 @@ permutations.lame_excuse = {
       }]
     },
     [
-      "We ", [
-        "understand we're not perfect", [
+      "We understand", "It has come to our attention", "These events have shown us", "These events have taught us", [
+        " we're not perfect", " we are imperfect", [
           " and ", [
-            "don't always get it right", ["."]
+            "don't", "won't", "can't", [
+              " ", [
+                "always get it right", "do things perfectly", [
+                  ["."], [" 100%", " all", [" of the time."]], [" every", " each", [ " time."]]
+                ]
+              ]
+            ]
           ]
         ]
       ]
