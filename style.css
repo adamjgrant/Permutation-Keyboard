@@ -6,4 +6,10 @@ body {
     max-height: 100vh;
     overflow: hidden;
     justify-content: stretch;
+    margin: 0;
+    padding: 15px;
+}
+
+* {
+    box-sizing: border-box;
 }

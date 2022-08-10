@@ -1,3 +1,7 @@
 [data-component~='key'] {
-
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    background: #EEE;
+    border: 0px;
+    border-radius: 10px;
 }
