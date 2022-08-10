@@ -16,9 +16,19 @@
 
     <textarea data-component="editor" placeholder="Type using the permutation buttons below."></textarea>
 
+    <div data-component="keyboard">
+        <div data-topic="corporate_apology">
+            <button data-component="key" data-permutation="sorry">😔 Sorry</button>
+        </div>
+    </div>
+
     <script type="module" src="mozart.js"></script>
 
     <!-- Components -->
+
+    <!-- keyboard -->
+    <script type="module" src="./components/keyboard/keyboard.js"></script>
+    <link rel="stylesheet" href="./components/keyboard/keyboard.css" />
 
     <!-- key -->
     <script type="module" src="./components/key/key.js"></script>
